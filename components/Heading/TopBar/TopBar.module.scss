@@ -1,0 +1,31 @@
+.wrapper {
+  @apply w-full py-3 bg-[#1E1F29] flex-wrap;
+
+  font-weight: 500;
+}
+
+.ulLeft,
+.ulRight {
+  @apply flex gap-4 relative flex-wrap;
+
+  &:hover {
+    .dropdown {
+      z-index: 0;
+      top: 25px;
+      left: 5px;
+
+      color: white;
+    }
+  }
+}
+
+.dropdown {
+  @apply flex justify-center items-center p-2 gap-2 absolute left-0 z-[-1];
+  top: -5px;
+  transition: all 0.5s ease;
+  background-color: #1e1f29;
+
+  &:hover {
+    color: red;
+  }
+}
