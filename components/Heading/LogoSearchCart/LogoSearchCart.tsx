@@ -85,28 +85,61 @@ function LogoSearchCart({}: Props) {
       </div>
       <div
         ref={sideNavRef}
-        className={`absolute top-0 left-0  h-screen  ${
+        className={`fixed top-0 left-0  h-screen z-10  ${
           currentSize[0] > 768 ? 'hidden' : 'block'
         } ${sideNavbarStatus ? 'w-screen' : 'min-w-[250px]'}`}
       >
-        <nav className='w-1/3 h-full bg-csblack pt-[4rem]'>
+        <nav className='w-[220px] h-full bg-csblack pt-[4rem]'>
           <ul className='flex flex-col px-4 gap-5 justify-between items-center h-max w-full '>
-            <li className='text-csred font-semibold border-b-2 border-csred w-full'>
+            <li
+              onClick={changeSideBar}
+              className='text-csred font-semibold border-b-2 border-csred w-full'
+            >
               Home
             </li>
-            <li className='text-gray-600 font-semibold w-full'>Hot Deals</li>
-            <li className='text-gray-600 font-semibold w-full'>Categories</li>
-            <li className='text-gray-600 font-semibold w-full'>Laptops</li>
-            <li className='text-gray-600 font-semibold w-full'>Smartphones</li>
-            <li className='text-gray-600 font-semibold w-full'>Cameras</li>
-            <li className='text-gray-600 font-semibold w-full'>Accessories</li>
+            <li
+              onClick={changeSideBar}
+              className='text-gray-600 font-semibold w-full'
+            >
+              Hot Deals
+            </li>
+            <li
+              onClick={changeSideBar}
+              className='text-gray-600 font-semibold w-full'
+            >
+              Categories
+            </li>
+            <li
+              onClick={changeSideBar}
+              className='text-gray-600 font-semibold w-full'
+            >
+              Laptops
+            </li>
+            <li
+              onClick={changeSideBar}
+              className='text-gray-600 font-semibold w-full'
+            >
+              Smartphones
+            </li>
+            <li
+              onClick={changeSideBar}
+              className='text-gray-600 font-semibold w-full'
+            >
+              Cameras
+            </li>
+            <li
+              onClick={changeSideBar}
+              className='text-gray-600 font-semibold w-full'
+            >
+              Accessories
+            </li>
           </ul>
         </nav>
         <div
           id='emptySpace'
           onClick={() => setSideNavbarStatus(false)}
-          className={`absolute top-0 right-0   bg-transparent ${
-            sideNavbarStatus ? 'w-2/3' : 'hidden'
+          className={`fixed top-0 right-0   bg-transparent ${
+            sideNavbarStatus ? 'w-[510px]' : 'hidden'
           } h-screen`}
         ></div>
       </div>

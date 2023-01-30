@@ -1,0 +1,20 @@
+.cardWrapper {
+  box-sizing: border-box;
+  @apply border relative hover:border-2 hover:border-red-600 duration-150 mb-20;
+
+  &:hover {
+    .cardExtention {
+      transform: rotateX(0deg);
+      z-index: 2;
+    }
+  }
+}
+
+.cardExtention {
+  transform: rotateX(90deg);
+  transform-origin: top;
+  transition: all 0.3s ease;
+
+  bottom: -80px;
+  @apply absolute left-0 border-2 w-full h-20 bg-cstopbar grid place-content-center;
+}

@@ -1,0 +1,15 @@
+.ImageWrapper {
+  clip-path: polygon(0 0, 95% 0, 25% 100%, 0% 100%);
+  background-color: rgba(#d10024, 0.9);
+  @apply absolute top-0 left-0 w-full h-full p-8;
+}
+
+.arrowClass {
+  @apply rounded-full border h-5 w-5 ml-2 text-xs grid place-content-center hover:text-black hover:bg-white hover:border-none cursor-pointer;
+}
+
+.imageCard {
+  @apply relative h-[340px] w-full mx-auto   
+  md:h-[260px] md:w-full
+  sm:w-3/4;
+}
