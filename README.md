@@ -1,4 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# This is a E-Com website templete project#
+
+# 31 January 2022 - Work in progress #
+
+Live at: https://e-commerce-templete-project.vercel.app/
+
+# Used tools #
+<li>NextJS / React</li>
+<li>Typescript</li>
+<li>Tailwindcss</li>
+<li>SCSS</li>
+<li>Owl Carousel</li>
+<li>Fontawesome icons</li>
 
 ## Getting Started
 
