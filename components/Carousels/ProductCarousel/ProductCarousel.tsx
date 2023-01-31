@@ -19,10 +19,13 @@ type Props = {
 function Newproducts({ title }: Props) {
   const [carousel, setCarousel] = useState({
     options: {
-      loop: true,
       margin: 10,
-      nav: true,
+      nav: false,
       dots: false,
+      smartSpeed: 900,
+      autoplaySpeed: 15000,
+      autoplay: true,
+      loop: true,
 
       responsive: {
         0: {
@@ -47,24 +50,23 @@ function Newproducts({ title }: Props) {
   });
 
   return (
-    <div className='max-w-[1200px] mx-auto mt-12 h-[800px]'>
+    <div className='mx-auto mt-12 h-[625px] max-w-[1200px]'>
       {/* TOP */}
-      <div className='flex justify-between items-center px-4 h-20'>
+      <div className='flex h-20 items-center justify-between px-4'>
         <h1 className='text-2xl font-bold text-csblack'>{title}</h1>
-        <ul className='flex px-4 gap-5 justify-between flex-wrap items-center h-full w-max'>
-          <li className='text-red-600 font-semibold border-b-2 border-red-600'>
+        <ul className='flex h-full w-max flex-wrap items-center justify-between gap-5 px-4'>
+          <li className='border-b-2 border-red-600 font-semibold text-red-600'>
             Laptops
           </li>
-          <li className='text-gray-600 font-semibold'>Smartphones</li>
-          <li className='text-gray-600 font-semibold'>Cameras</li>
-          <li className='text-gray-600 font-semibold'>Accessories</li>
+          <li className='font-semibold text-gray-600'>Smartphones</li>
+          <li className='font-semibold text-gray-600'>Cameras</li>
+          <li className='font-semibold text-gray-600'>Accessories</li>
         </ul>
       </div>
       {/* BottomCards */}
       <OwlCarousel className='owl-theme' {...carousel.options}>
         {AllCards}
       </OwlCarousel>
-      ;
     </div>
   );
 }

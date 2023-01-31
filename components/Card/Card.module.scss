@@ -1,6 +1,6 @@
 .cardWrapper {
   box-sizing: border-box;
-  @apply border relative hover:border-2 hover:border-red-600 duration-150 mb-20;
+  @apply relative mb-20 border duration-150 hover:border-2 hover:border-red-600;
 
   &:hover {
     .cardExtention {
@@ -10,11 +10,49 @@
   }
 }
 
+//Bottom
+
+.bottomIcons {
+  @apply flex h-14 items-center justify-center gap-8;
+
+  i {
+    position: relative;
+    &::before,
+    &:first-child {
+      content: '';
+    }
+  }
+}
+
+//Bottom
+
+//BOTTOM Extention
 .cardExtention {
   transform: rotateX(90deg);
   transform-origin: top;
   transition: all 0.3s ease;
 
   bottom: -80px;
-  @apply absolute left-0 border-2 w-full h-20 bg-cstopbar grid place-content-center;
+  @apply absolute left-0 grid h-20 w-full place-content-center border-2 bg-cstopbar;
 }
+
+.cardExtentionButton {
+  @apply flex gap-2 rounded-3xl bg-red-600 px-4 py-2 font-semibold tracking-wide text-white;
+
+  transition: all 0.5s ease;
+  i {
+    display: none;
+  }
+
+  &:hover {
+    background-color: white;
+    border: 2px solid red;
+    color: black;
+
+    i {
+      color: black;
+      display: block;
+    }
+  }
+}
+//Bottom Extention

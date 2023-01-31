@@ -5,36 +5,37 @@ type Props = {};
 function Card({}: Props) {
   return (
     <div className={styles.cardWrapper}>
-      <div className='max-w-[300px] h-[280px] mx-auto px-2'>
-        <img src='/imgs/laptop.jpg' className='w-full h-full object-contain' />
+      <div className='mx-auto h-[280px] max-w-[300px] px-2'>
+        <img src='/imgs/laptop.jpg' className='h-full w-full object-contain' />
       </div>
-      <div className='flex flex-col justify-center items-center'>
-        <span className='text-sm text-gray-500 py-2'>CATEGORY</span>
-        <h2 className='font-bold text-md'>PRODUCT NAME GOES HERE</h2>
-        <p className='font-bold text-lg text-csred'>
+      <div className='flex flex-col items-center justify-center'>
+        <span className='py-2 text-sm text-gray-500'>CATEGORY</span>
+        <h2 className='text-md font-bold'>PRODUCT NAME GOES HERE</h2>
+        <p className='text-lg font-bold text-csred'>
           $980.00
-          <small className='text-gray-500 font-medium pl-1'>
+          <small className='pl-1 font-medium text-gray-500'>
             <s>$990.00</s>
           </small>
         </p>
       </div>
-      <div className='relative flex justify-center  items-center  h-8'>
-        <div className='w-max z-[1] flex justify-center gap-1 bg-white '>
+      <div className='relative flex h-8  items-center  justify-center'>
+        <div className='z-[1] flex w-max justify-center gap-1 bg-white '>
           {Array.from({ length: 5 }, (_, i) => (
             <i key={i} className='fa-sharp fa-solid fa-star text-csred'></i>
           ))}
         </div>
 
-        <div className='absolute top-[50%] z-[0] left-0 border w-full'></div>
+        <div className='absolute top-[50%] left-0 z-[0] w-full border'></div>
       </div>
-      <div className='flex justify-center gap-4 h-14 items-center'>
-        <i className='fa-regular fa-heart'></i>
-        <i className='fa-solid fa-right-left'></i>
-        <i className='fa-sharp fa-solid fa-eye'></i>
+      <div className={styles.bottomIcons}>
+        <i className='fa-regular fa-heart text-2xl'></i>
+        <i className='fa-solid fa-right-left text-2xl'></i>
+        <i className='fa-sharp fa-solid fa-eye text-2xl'></i>
       </div>
       <div className={styles.cardExtention}>
-        <button className='bg-red-600 px-4 py-2 rounded-3xl text-white font-semibold tracking-wide'>
-          ADD TO CART
+        <button className={styles.cardExtentionButton}>
+          <i className='fa-solid fa-cart-shopping text-center text-lg text-white'></i>
+          <span>ADD TO CART</span>
         </button>
       </div>
     </div>

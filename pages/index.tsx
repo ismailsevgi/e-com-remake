@@ -1,8 +1,10 @@
 import ProductCarousel from '@/components/Carousels/ProductCarousel/ProductCarousel';
+import Footer from '@/components/Footer/Footer';
 import LogoSearchCart from '@/components/Heading/LogoSearchCart/LogoSearchCart';
 import Navbar from '@/components/Heading/Navbar/Navbar';
 import TopBar from '@/components/Heading/TopBar/TopBar';
 import Hotdeals from '@/components/HotDeal/Hotdeals';
+import NewsLetter from '@/components/NewsLetter/NewsLetter';
 import ThreeCollections from '@/components/ThreeCollections/ThreeCollections';
 import Head from 'next/head';
 
@@ -42,7 +44,9 @@ export default function Home() {
         <ProductCarousel title='TOP SELLING' />
         {/* Carousel | Multi */}
         {/* Sign up news */}
+        <NewsLetter />
         {/* Footer */}
+        <Footer />
       </main>
     </>
   );
