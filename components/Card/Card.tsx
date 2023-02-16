@@ -1,20 +1,26 @@
 import React from 'react';
 import styles from './Card.module.scss';
-type Props = {};
+type Props = {
+  name: string;
+  price: number;
+  imgUrl: string;
+};
 
-function Card({}: Props) {
+function Card({ name, price, imgUrl }: Props) {
+  console.log('New cards!');
+
   return (
     <div className={styles.cardWrapper}>
       <div className='mx-auto h-[280px] max-w-[300px] px-2'>
-        <img src='/imgs/laptop.jpg' className='h-full w-full object-contain' />
+        <img src={imgUrl} className='h-full w-full object-contain' />
       </div>
       <div className='flex flex-col items-center justify-center'>
         <span className='py-2 text-sm text-gray-500'>CATEGORY</span>
-        <h2 className='text-md font-bold'>PRODUCT NAME GOES HERE</h2>
+        <h2 className='text-md font-bold'>{name}</h2>
         <p className='text-lg font-bold text-csred'>
-          $980.00
+          ${price}
           <small className='pl-1 font-medium text-gray-500'>
-            <s>$990.00</s>
+            <s>${price + 1000}</s>
           </small>
         </p>
       </div>

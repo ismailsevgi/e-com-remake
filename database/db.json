@@ -1,0 +1,154 @@
+{
+  "laptops": [
+    {
+      "id": 1,
+      "name": "Acer Aspire 3 A315-56 Laptop",
+      "imgUrl": "https://m.media-amazon.com/images/I/81VHCHnfPzL._AC_SL1500_.jpg",
+      "price": 6999
+    },
+    {
+      "id": 2,
+      "name": "Lenovo Ideapad 3",
+      "imgUrl": "https://m.media-amazon.com/images/I/813i7tkIAEL._AC_SL1500_.jpg",
+      "price": 8999
+    },
+    {
+      "id": 3,
+      "name": "Apple 2022 M2 çipli MacBook Air laptop 13.6 inç",
+      "imgUrl": "https://m.media-amazon.com/images/I/719C6bJv8jL._AC_SL1500_.jpg",
+      "price": 32000
+    },
+    {
+      "id": 4,
+      "name": "Apple 2020 MacBook Air Laptop: Apple M1 Çip",
+      "imgUrl": "https://m.media-amazon.com/images/I/61bAX98FyFL._AC_SL1500_.jpg",
+      "price": 18799
+    },
+    {
+      "id": 5,
+      "name": "Dell Inspiron 15 3511",
+      "imgUrl": "https://m.media-amazon.com/images/I/81WcTgM9OIL._AC_SL1500_.jpg",
+      "price": 10999
+    },
+    {
+      "id": 6,
+      "name": "Dell G15 5511 i5-11400H",
+      "imgUrl": "https://m.media-amazon.com/images/I/61sL1oJd38L._AC_SL1500_.jpg",
+      "price": 15999
+    }
+  ],
+  "smartphones": [
+    {
+      "id": 7,
+      "name": "Samsung Galaxy A23",
+      "imgUrl": "https://m.media-amazon.com/images/I/81gZ2nI4LkL._AC_SL1500_.jpg",
+      "price": 7499
+    },
+    {
+      "id": 8,
+      "name": "Samsung Galaxy A53",
+      "imgUrl": "https://m.media-amazon.com/images/I/71lddEkg7cL._AC_SL1500_.jpg",
+      "price": 10499
+    },
+    {
+      "id": 9,
+      "name": "Reeder P13 Blue Max Lite",
+      "imgUrl": "https://m.media-amazon.com/images/I/71ti2UZcz6L._AC_SL1500_.jpg",
+      "price": 1999
+    },
+    {
+      "id": 10,
+      "name": "OPPO A16",
+      "imgUrl": "https://m.media-amazon.com/images/I/416hkuXeStL._AC_SL1024_.jpg",
+      "price": 2499
+    },
+    {
+      "id": 11,
+      "name": "Samsung Galaxy M23",
+      "imgUrl": "https://m.media-amazon.com/images/I/51bQiEPzhmL._AC_SL1500_.jpg",
+      "price": 7599
+    },
+    {
+      "id": 12,
+      "name": "OPPO Reno5",
+      "imgUrl": "https://m.media-amazon.com/images/I/51XQ8TaFHHS._AC_SL1500_.jpg",
+      "price": 8499
+    }
+  ],
+  "cameras": [
+    {
+      "id": 1,
+      "name": "Andoer Dijital camera",
+      "imgUrl": "https://m.media-amazon.com/images/I/61B3kYbboFL._AC_SL1500_.jpg",
+      "price": 900
+    },
+    {
+      "id": 2,
+      "name": "Sony, Dsc-W830",
+      "imgUrl": "https://m.media-amazon.com/images/I/51My2wOGYLL._AC_SL1014_.jpg",
+      "price": 4100
+    },
+    {
+      "id": 3,
+      "name": "Canon M200",
+      "imgUrl": "https://m.media-amazon.com/images/I/51hBYYLguhL._AC_.jpg",
+      "price": 10999
+    },
+    {
+      "id": 4,
+      "name": "Panasonic Lumix DC-FZ82",
+      "imgUrl": "https://m.media-amazon.com/images/I/81qszNigceL._AC_SL1500_.jpg",
+      "price": 2499
+    },
+    {
+      "id": 5,
+      "name": "Canon EOS 250D",
+      "imgUrl": "https://m.media-amazon.com/images/I/7145+mjrBTL._AC_SL1500_.jpg",
+      "price": 13180
+    },
+    {
+      "id": 6,
+      "name": "PANASONIC LUMIX TZ-90",
+      "imgUrl": "https://m.media-amazon.com/images/I/81tjOpmwW7L._AC_SL1500_.jpg",
+      "price": 8999
+    }
+  ],
+  "headphones": [
+    {
+      "id": 1,
+      "name": "Trust 20073",
+      "imgUrl": "https://m.media-amazon.com/images/I/71eDb-G9-tL._AC_SL1500_.jpg",
+      "price": 230
+    },
+    {
+      "id": 2,
+      "name": "JBL Quantum 100",
+      "imgUrl": "https://m.media-amazon.com/images/I/61KiVOTquQL._AC_SL1500_.jpg",
+      "price": 629
+    },
+    {
+      "id": 3,
+      "name": "Snopy SN-633 X-BLOOM",
+      "imgUrl": "https://m.media-amazon.com/images/I/619AmGXcUTL._AC_SL1500_.jpg",
+      "price": 135
+    },
+    {
+      "id": 4,
+      "name": "Sony MDR-RF811RK",
+      "imgUrl": "https://m.media-amazon.com/images/I/81bRwUkgMJL._AC_SL1500_.jpg",
+      "price": 1629
+    },
+    {
+      "id": 5,
+      "name": "HP Bluetooth kulaklık 500",
+      "imgUrl": "https://m.media-amazon.com/images/I/71FXbOgdfYL._AC_SL1500_.jpg",
+      "price": 729
+    },
+    {
+      "id": 6,
+      "name": "SteelSeries Arctis 1",
+      "imgUrl": "https://m.media-amazon.com/images/I/811tgMXfuxL._AC_SL1500_.jpg",
+      "price": 869
+    }
+  ]
+}
