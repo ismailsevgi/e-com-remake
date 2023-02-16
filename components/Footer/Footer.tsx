@@ -4,36 +4,36 @@ type Props = {};
 
 function Footer({}: Props) {
   return (
-    <div className='min-h-[480px]border-t-4 border-red-700 bg-csblack '>
+    <div className='min-h-[480px]border-t-4 hidden border-red-700 bg-csblack md:block'>
       <div
         id='top-footer'
-        className='mx-auto  grid w-[1200px]   grid-cols-4 gap-4 pt-8 text-white'
+        className='mx-auto  grid max-w-[1200px]    grid-cols-4 gap-4 pt-8 text-white'
       >
         <div className='flex flex-col gap-4 p-6 tracking-wide'>
-          <h3 className='text-left text-2xl font-semibold leading-[5rem] '>
+          <h3 className='text-left text-lg font-semibold leading-[5rem] md:text-2xl '>
             ABOUT US
           </h3>
           <div className='flex flex-col gap-4 '>
-            <p className='text-gray-400'>
+            <p className='text-sm text-gray-400'>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut
             </p>
             <ul className='flex flex-col gap-4 '>
               <li className='flex items-center justify-start gap-4 '>
                 <i className='fa-solid fa-phone text-red-600'></i>
-                <span className='cursor-pointer text-gray-400 hover:text-red-600'>
+                <span className='cursor-pointer text-sm text-gray-400 hover:text-red-600'>
                   +041-95-51-84
                 </span>
               </li>
               <li className='flex items-center justify-start gap-4 '>
                 <i className='fa-regular fa-envelope text-red-600 '></i>
-                <span className='cursor-pointer text-gray-400 hover:text-red-600'>
+                <span className='cursor-pointer text-sm text-gray-400 hover:text-red-600'>
                   email@gmail.com
                 </span>
               </li>
               <li className='flex items-center justify-start gap-4 '>
                 <i className='fa-solid fa-location-dot text-red-600'></i>
-                <span className='cursor-pointer text-gray-400 hover:text-red-600'>
+                <span className='cursor-pointer text-sm text-gray-400 hover:text-red-600'>
                   1734 Stonecoal Road
                 </span>
               </li>
@@ -41,7 +41,7 @@ function Footer({}: Props) {
           </div>
         </div>
         <div className='flex flex-col gap-4 p-6 tracking-wide'>
-          <h3 className='text-left text-2xl font-semibold leading-[5rem]'>
+          <h3 className='text-left text-lg font-semibold leading-[5rem] md:text-2xl'>
             CATEGORIES
           </h3>
           <ul className='flex flex-col gap-4 text-gray-400'>
@@ -53,7 +53,7 @@ function Footer({}: Props) {
           </ul>
         </div>
         <div className='flex flex-col gap-4 p-6 tracking-wide'>
-          <h3 className='text-left text-2xl font-semibold leading-[5rem]'>
+          <h3 className='text-left text-lg font-semibold leading-[5rem] md:text-2xl'>
             INFORMATION
           </h3>
           <ul className='flex flex-col gap-4 text-gray-400'>
@@ -65,7 +65,7 @@ function Footer({}: Props) {
           </ul>
         </div>
         <div className='flex flex-col gap-4 p-6 tracking-wide'>
-          <h3 className='text-left text-2xl font-semibold leading-[5rem]'>
+          <h3 className='text-left text-lg font-semibold leading-[5rem] md:text-2xl'>
             SERVICE
           </h3>
           <ul className='flex flex-col gap-4 text-gray-400'>

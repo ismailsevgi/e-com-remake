@@ -89,7 +89,6 @@ function Newproducts({ title }: Props) {
     'border-b-2 border-red-600 font-semibold text-red-600 cursor-pointer';
   const inactiveLink = 'font-semibold text-gray-600 cursor-pointer';
 
-  console.log(db[carouselProducts]);
   return (
     <div className='mx-auto mt-12 h-[625px] max-w-[1200px]'>
       {/* TOP */}
