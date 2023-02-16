@@ -1,15 +1,25 @@
 .ImageWrapper {
   clip-path: polygon(0 0, 95% 0, 25% 100%, 0% 100%);
   background-color: rgba(#d10024, 0.9);
-  @apply absolute top-0 left-0 w-full h-full p-8;
+  @apply absolute top-0 left-0 h-full w-full p-8;
 }
 
 .arrowClass {
-  @apply rounded-full border h-5 w-5 ml-2 text-xs grid place-content-center hover:text-black hover:bg-white hover:border-none cursor-pointer;
+  @apply ml-2 grid h-5 w-5 cursor-pointer place-content-center rounded-full border text-xs hover:border-none hover:bg-white hover:text-black;
 }
 
 .imageCard {
-  @apply relative h-[340px] w-full mx-auto   
-  md:h-[260px] md:w-full
-  sm:w-3/4;
+  @apply relative mx-auto h-[340px] w-full   
+  sm:w-3/4 md:h-[260px]
+  md:w-full;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  &:hover {
+    img {
+      transition: all 0.5s ease;
+      width: 120%;
+      height: 120%;
+    }
+  }
 }
